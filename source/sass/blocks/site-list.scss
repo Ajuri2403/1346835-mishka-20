@@ -1,0 +1,19 @@
+.site-list {
+  @include list-normalize;
+}
+
+.site-list__item {
+}
+
+.site-list__item--text--norm {
+  font-weight: normal;
+  color: $grey-brown;
+}
+
+.site-list__item--text--small {
+  font-size: 15px;
+}
+
+.site-list__item--block {
+  margin-bottom: 19px;
+}

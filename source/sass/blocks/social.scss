@@ -1,0 +1,4 @@
+.social__list {
+  @include list-normalize;
+  border-bottom: 1px solid $footer-border;
+}
