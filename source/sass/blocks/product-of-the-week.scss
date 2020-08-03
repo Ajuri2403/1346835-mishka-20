@@ -1,0 +1,60 @@
+.product-of-the-week {
+  color: $grey-brown;
+}
+
+.product-of-the-week__header {
+  margin-bottom: 17.5px;
+}
+
+.product-of-the-week__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $aquamarin;
+  text-transform: uppercase;
+}
+
+.product-of-the-week__name {
+  margin-bottom: 3.5px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.product-of-the-week__text {
+  margin-bottom: 21px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.product-of-the-week__list {
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.product-of-the-week__property {
+  border-bottom: 1px solid $property-border;
+}
+
+.product-of-the-week__value {
+  margin: 0;
+  padding: 0;
+}
+
+.product-of-the-week__image {
+  margin-bottom: 25.5px;
+}
+
+.product-of-the-week__price {
+  margin-bottom: 24.5px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.product-of-the-week__button-order {
+  margin-bottom: 42px;
+}

@@ -1,0 +1,31 @@
+.product-line {
+  margin-bottom: 31px;
+  font-weight: bold;
+  background: $section-back url("../img/hero-mobile@1x.jpg") no-repeat;
+}
+
+.product-line__slogan {
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.product-line__list {
+  @include list-normalize;
+}
+
+.product-line__item {
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.product-line__item {
+  color: $basic-white;
+}
+
+.product-line__item--interior-items {
+  background-color: $aquamarin;
+}
+
+.product-line__item--toys-items {
+  background-color: $aquamarin-dark;
+}

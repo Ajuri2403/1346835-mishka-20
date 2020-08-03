@@ -4,47 +4,53 @@
   <meta charset="UTF-8">
   <title>Mishka-Ajuri</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" alt="Магазин хэндмейд товаров Mishka" width="86" height="35">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <svg xmlns="" width="18" height="18"></svg>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search-form__search" name="main-search" id="search-header">
-              <label for="search-header">Поиск по сайту:</label>
-            </form>
-          </li>
-          <li class="site-list__item">
-            <svg xmlns="" width="21" height="18"></svg>
-            <a href="#">Корзина: <span>пока пуста</span></a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Распродажа</a>
-          </li>
-          <li class="site-list__item site-list__item--text--norm">
-            <a href="#">Бесплатная доставка по России</a>
-          </li>
-        </ul>
-      </div>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--block">
+          <a class="page-header__logo logo" href="index.html">
+            <img src="img/logotype-mobile.svg" alt="Магазин хэндмейд товаров Mishka" width="86" height="35">
+          </a>
+        </li>
+
+        <li class="site-list__item site-list__item--block">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+
+        <li class="site-list__item site-list__item--block">
+          <a href="#">Вязание на заказ</a>
+        </li>
+
+        <li class="site-list__item site-list__item--block">
+          <svg xmlns="" width="18" height="18"></svg>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search-form__search" name="main-search" id="search-header">
+            <label for="search-header">Поиск по сайту</label>
+          </form>
+        </li>
+
+        <li class="site-list__item site-list__item--block">
+          <svg xmlns="" width="21" height="18"></svg>
+          <a href="#">Корзина: <span>пока пуста</span></a>
+        </li>
+
+        <li class="site-list__item site-list__item--text--small">
+          <a href="#">Новые поступления</a>
+        </li>
+
+        <li class="site-list__item site-list__item--text--small">
+          <a href="#">Распродажа</a>
+        </li>
+
+        <li class="site-list__item site-list__item--text--norm site-list__item--text--small">
+          <a href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -183,7 +189,7 @@
         <img src="img/logotype-mobile.svg" alt="Магазин хэндмейд товаров Mishka" width="86" height="35">
       </a>
       <div class="page-footer__social social">
-        <h2 class="social__title">Мы в соцсетях!</h2>
+        <h2 class="visually-hidden">Мы в соцсетях!</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-lebel="Мы в Вконтакте">
