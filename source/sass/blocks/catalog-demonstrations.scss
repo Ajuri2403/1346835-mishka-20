@@ -1,0 +1,35 @@
+.catalog-demonstration {
+  margin-bottom: 58px;
+}
+
+.catalog-demonstration__video {
+  margin-bottom: 35px;
+}
+
+//Бордер ниже разделен на две части чтобы блок с видео был не в бордере
+//1 - бордер верхнего блока без нижней части
+//2 - бордер нижнего блока без верхней части
+//3 - контейнер, необходимый для создания бордера
+.catalog-demonstration__title {
+  padding-top: 21.5px;
+  padding-left: 91px;
+  min-height: 96px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid $property-border;/*1*/
+  border-bottom: none;
+}
+
+.catalog-demonstration__container {/*3*/
+  padding: 0 34px 33px;
+  border: 1px solid $property-border;/*2*/
+  border-top: none;
+}
+
+.catalog-demonstration__description {
+  margin-bottom: 41px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey-brown;
+}

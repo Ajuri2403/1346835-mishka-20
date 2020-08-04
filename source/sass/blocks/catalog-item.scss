@@ -1,17 +1,27 @@
 .catalog-item__product-image {
   .catalog-item--bunny-jumper & {
-    margin-bottom: 27.5px;
     background-color: $footer-back;
   }
 
   .catalog-item--laundry-basket & {
-    margin-bottom: 27.5px;
     background-color: $section-back;
   }
 
   .catalog-item--basket-for-toys & {
-    margin-bottom: 28.5px;
     background-color: $footer-back;
+  }
+}
+
+.catalog-item__container {
+  padding: 27.5px 28px 26.5px 28px;
+  border: 1px solid $property-border;
+
+  .catalog-item--laundry-basket & {
+    padding-top: 28.5px;
+  }
+
+  .catalog-item--basket-for-toys & {
+    padding-top: 24.5px;
   }
 }
 
