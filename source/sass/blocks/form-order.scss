@@ -6,28 +6,24 @@
   margin: 0;
   padding: 0;
   border: none;
-}
 
-.form-order--type {
-  margin-bottom: 30px;
-}
+  &--type {
+    margin-bottom: 30px;
+  }
 
-.form-order--color {
-  margin-bottom: 32px;
-}
+  &--color {
+    margin-bottom: 32px;
+  }
 
-.form-order--full-name,
-.form-order--phone,
-.form-order--email {
-  margin-bottom: 34.5px;
-}
+  &--full-name,
+  &--phone,
+  &--email {
+    margin-bottom: 34.5px;
+  }
 
-.form-order--message {
-  margin-bottom: 17px;
-}
-
-.form-order--phone {
-  margin-bottom: 34.5px;
+  &--message {
+    margin-bottom: 17px;
+  }
 }
 
 .form-order__title {
@@ -38,24 +34,24 @@
   color: $aquamarin;
   text-transform: uppercase;
 
-  .form-order--type & {
+  .form-order__item--type & {
     margin-bottom: 24px;
   }
 
-  .form-order--color & {
+  .form-order__item--color & {
     margin-bottom: 25px;
   }
 
-  .form-order--full-name & {
+  .form-order__item--full-name & {
     margin-bottom: 29px;
   }
 
-  .form-order--phone &,
-  .form-order--email & {
+  .form-order__item--phone &,
+  .form-order__item--email & {
     margin-bottom: 4.5px;
   }
 
-  .form-order--message & {
+  .form-order__item--message & {
     margin-bottom: 22.5px;
   }
 }
