@@ -10,7 +10,7 @@
 }
 
 .product-line__list {
-  @include list-normalize;
+  @include list-reset;
 }
 
 .product-line__item {

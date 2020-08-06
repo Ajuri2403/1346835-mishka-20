@@ -57,7 +57,7 @@
 }
 
 .form-order__list {
-  @include list-normalize;
+  @include list-reset;
 }
 
 .form-order__input {

@@ -1,4 +1,4 @@
 .social__list {
-  @include list-normalize;
+  @include list-reset;
   border-bottom: 1px solid $footer-border;
 }
