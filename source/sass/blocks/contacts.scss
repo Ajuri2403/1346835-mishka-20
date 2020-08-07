@@ -1,0 +1,29 @@
+.contacts {
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  margin-bottom: 27px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__communication-block {
+  margin-bottom: 33px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey-brown;
+}
+
+.contacts__email {
+  margin-bottom: 30px;
+}
+
+.contacts__value address {
+  font-style: normal;
+}
+
+.contacts__map {
+  margin-bottom: 42px;
+}

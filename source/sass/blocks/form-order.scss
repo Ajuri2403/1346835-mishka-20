@@ -1,0 +1,105 @@
+.form-order {
+
+}
+
+.form-order__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--type {
+    margin-bottom: 30px;
+  }
+
+  &--color {
+    margin-bottom: 32px;
+  }
+
+  &--full-name,
+  &--phone,
+  &--email {
+    margin-bottom: 34.5px;
+  }
+
+  &--message {
+    margin-bottom: 17px;
+  }
+}
+
+.form-order__title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 16px;
+  color: $aquamarin;
+  text-transform: uppercase;
+
+  .form-order__item--type & {
+    margin-bottom: 24px;
+  }
+
+  .form-order__item--color & {
+    margin-bottom: 25px;
+  }
+
+  .form-order__item--full-name & {
+    margin-bottom: 29px;
+  }
+
+  .form-order__item--phone &,
+  .form-order__item--email & {
+    margin-bottom: 4.5px;
+  }
+
+  .form-order__item--message & {
+    margin-bottom: 22.5px;
+  }
+}
+
+.form-order__list {
+  @include list-normalize;
+}
+
+.form-order__input {
+  border: none;
+  border-bottom: 2px solid $basic-black;
+
+  .form-order-input-block--radio &,
+  .form-order-input-block--checkbox & {
+    display: none;
+  }
+
+  .form-order--message & {
+    border: 2px solid $basic-black;
+  }
+}
+
+.form-order-input-block {
+  &--radio {
+    margin-bottom: 24px;
+  }
+
+  &--checkbox {
+    margin-bottom: 43.5px;
+  }
+
+  &--full-name {
+    margin-bottom: 22px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-order__list label {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.form-order__warn {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-brown;
+}
