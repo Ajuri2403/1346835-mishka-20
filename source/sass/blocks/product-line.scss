@@ -2,30 +2,122 @@
   margin-bottom: 31px;
   font-weight: bold;
   background: $section-back url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-position: center;
+}
+
+.product-line__wrapper {
+  flex-direction: column;
+  min-height: 489px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 746px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 763px;
+  }
+}
+
+.product-line__header {
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+  }
 }
 
 .product-line__slogan {
+  margin: 0 auto;
+  padding: 0 30px;
+  margin-bottom: auto;
+  max-width: 700px;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .product-line__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .product-line__item {
+  position: relative;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding-top: 24px;
+  padding-left: 30px;
+  min-height: 103px;
   font-size: 19px;
   line-height: 24px;
-}
-
-.product-line__item {
   color: $basic-white;
+
+  &--interior-items {
+    background-color: $aquamarin;
+  }
+
+  &--toys {
+    background-color: $aquamarin-dark;
+  }
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-left: 36px;
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.product-line__item--interior-items {
-  background-color: $aquamarin;
+.product-line__item a {
+  @include link-reset;
+  display: block;
+  max-width: 138px;
 }
 
-.product-line__item--toys-items {
-  background-color: $aquamarin-dark;
+.product-line__item svg {
+  position: absolute;
+  z-index: -1;
+}
+
+.product-line__item--interior-items svg {
+  top: 23px;
+  right: 36px;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    top: 30px;
+    right: 36px;
+  }
+}
+
+.product-line__item--toys svg {
+  top: 21px;
+  right: 27px;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 31px;
+    right: 35px;
+  }
 }

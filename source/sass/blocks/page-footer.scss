@@ -2,8 +2,40 @@
   background-color: $footer-back;
 }
 
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.page-footer__logo {
+  box-sizing: border-box;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 51px;
+    min-height: 143px;
+  }
+}
+
+.page-footer__social {
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+  }
+}
+
 .page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+  }
 }

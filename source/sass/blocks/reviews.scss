@@ -4,9 +4,6 @@
 
 .reviews__title {
   margin-bottom: 14px;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
 }
 
 .reviews__item {
@@ -32,6 +29,7 @@
   color: $basic-black;
 
   & a {
+    @include link-reset;
     font-weight: normal;
     line-height: 30px;
     color: $grey-brown;

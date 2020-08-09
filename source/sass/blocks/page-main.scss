@@ -1,1 +1,7 @@
+.page-main {
+  margin-bottom: auto;
 
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    margin-top: -44px;
+  }
+}

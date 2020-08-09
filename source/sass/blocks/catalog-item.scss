@@ -1,4 +1,18 @@
+.catalog-item {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .catalog-item__product-image {
+  flex-grow: 1;
+  flex-basis: 50%;
+
   .catalog-item--bunny-jumper & {
     background-color: $footer-back;
   }
@@ -13,8 +27,22 @@
 }
 
 .catalog-item__container {
-  padding: 27.5px 28px 26.5px 28px;
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding: 26.5px 28px;
   border: 1px solid $property-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 33px 25.5px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 33px 25.5px 28px;
+  }
+
+  .catalog-item--bunny-jumper & {
+    padding-top: 27.5px;
+  }
 
   .catalog-item--laundry-basket & {
     padding-top: 28.5px;
@@ -34,32 +62,79 @@
 
   .catalog-item--bunny-jumper & {
     margin-bottom: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 6.5px;
+    }
   }
 
   .catalog-item--laundry-basket & {
     margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 9.5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 6.5px;
+    }
   }
 
   .catalog-item--basket-for-toys & {
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 7.5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }
 
-.catalog-item__product-properties {
+.catalog-item__product-name a {
+  @include link-reset;
+}
+
+.catalog-item__product-info {
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 22.5px;
   padding: 0;
   padding-bottom: 17.5px;
+  min-height: 79px;
+  border-bottom: 1px solid $property-border;
+
+  @media (min-width: $tablet-width) {
+    min-height: 234px;
+    margin-bottom: 23.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 97px;
+  }
+}
+
+.catalog-item__product-properties {
+  padding: 0;
+  margin: 0;
   font-size: 13px;
   line-height: 30px;
-  border-bottom: 1px solid $property-border;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .catalog-item__product-order {
   margin: 0;
-  margin-bottom: 26.5px;
   padding: 0;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }

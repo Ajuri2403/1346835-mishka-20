@@ -16,7 +16,9 @@
        url("/fonts/opensansbold.woff") format("woff");
 }
 
-body {
+.page__body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: "Open sans", Arial, sans-serif;
