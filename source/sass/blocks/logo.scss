@@ -1,0 +1,7 @@
+.logo {
+  @include link-reset;
+}
+
+.logo svg {
+  fill: $basic-black;
+}

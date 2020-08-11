@@ -1,4 +1,15 @@
 .social__list {
-  @include list-normalize;
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
   border-bottom: 1px solid $footer-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.social__link {
+  @include link-reset;
 }

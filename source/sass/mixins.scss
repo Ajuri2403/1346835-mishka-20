@@ -1,5 +1,10 @@
-@mixin list-normalize {
+@mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color:inherit;
 }

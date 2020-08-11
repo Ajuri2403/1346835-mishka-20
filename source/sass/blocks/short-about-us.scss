@@ -1,10 +1,30 @@
 .short-about-us {
+  margin-bottom: 58px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 83px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    padding-left: 175px;
+  }
 }
 
 .short-about-us__title {
-  font-size: 25px;
-  line-height: 30px;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
 }

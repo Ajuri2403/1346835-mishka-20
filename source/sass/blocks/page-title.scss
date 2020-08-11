@@ -1,0 +1,20 @@
+.page-title {
+  padding: 73.5px 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $footer-back;
+
+  @media (min-width: $tablet-width) {
+    padding: 100.5px 0 86.5px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 0 113px 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -3,12 +3,16 @@
 }
 
 .form-block__title {
-  padding-top: 73.5px;
-  padding-left: 22px;
+  margin: 0;
   margin-bottom: 17px;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 98.5px;
+  }
 }
 
 .form-block__slogan {
