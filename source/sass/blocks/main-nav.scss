@@ -6,10 +6,23 @@
   position: absolute;
   top: 29px;
   right: 30px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 
   &::before {
     content: "";
-    width: 28.5px;
+    position: absolute;
+    top: 9.5px;
+    left: -3.25px;
+    display: block;
+    width: 27.5px;
     height: 2px;
     background-color: $basic-black;
     transform: rotate(45deg);
@@ -17,7 +30,11 @@
 
   &::after {
     content: "";
-    width: 28.5px;
+    position: absolute;
+    top: 9.5px;
+    left: -3.25px;
+    display: block;
+    width: 27.5px;
     height: 2px;
     background-color: $basic-black;
     transform: rotate(-45deg);

@@ -13,7 +13,7 @@
 .catalog__container {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 316px 316px 316px;
     column-gap: 51px;
     row-gap: 57px;
   }

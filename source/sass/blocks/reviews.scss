@@ -1,46 +1,122 @@
 .reviews {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.reviews__wrapper {
+  position: relative;
+  padding-bottom: 103px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 79px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-bottom: 96px;
+  }
+}
+
+.reviews__header {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    min-height: 53px;
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__title {
-  margin-bottom: 14px;
+  align-self: flex-end;
+}
+
+.reviews__button-write {
+  position: absolute;
+  bottom: 51px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-bottom: auto;
+    width: 175px;
+  }
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
 }
 
 .reviews__text {
+  padding: 0;
+  margin: 0;
   margin-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
   color: $grey-brown;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.reviews__sup-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .reviews__author-info {
+  display: block;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
 
-  & a {
-    @include link-reset;
-    font-weight: normal;
-    line-height: 30px;
-    color: $grey-brown;
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1px)){
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
-.reviews__switch-block {
-  margin-bottom: 38px;
-  border: 1px solid $property-border;
+.reviews__author-info a {
+  @include link-reset;
+  font-weight: normal;
+  line-height: 30px;
+  color: $grey-brown;
 }
 
-.reviews__button-write {
-  margin-bottom: 51px;
+
+.reviews__switch-block {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

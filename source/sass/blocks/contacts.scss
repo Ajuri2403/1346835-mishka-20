@@ -1,43 +1,141 @@
 .contacts {
+  position: relative;
+  box-sizing: border-box;
   margin-bottom: 39px;
+  padding-bottom: 94px;
 
-  & a {
-    @include link-reset;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 107px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    max-width: $desktop-width;
+    padding-bottom: 0;
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+  }
+}
+
+.contacts a {
+  @include link-reset;
+}
+
+.contacts__wrapper {
+  min-width: $mobile-min-width;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 330px;
+    margin: 0;
+    margin-right: 20px;
+    padding-top: 79px;
+    padding-left: 175px;
   }
 }
 
 .contacts__title {
+  padding: 0;
+  margin: 0;
   margin-bottom: 27px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 34.5px;
     font-size: 53px;
     line-height: 57px;
   }
 }
 
 .contacts__communication-block {
+  padding: 0;
+  margin: 0;
   margin-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
   color: $grey-brown;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 49px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 84.5px;
+  }
+}
+
+.contacts__email,
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    flex-basis: 334px;
+  }
 }
 
 .contacts__email {
   margin-bottom: 30px;
 }
 
+.contacts__param {
+  flex-grow: 1;
+  flex-basis: 78px;
+}
+
+.contacts__value {
+  flex-grow: 1;
+  flex-basis: 183px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
 .contacts__value address {
   font-style: normal;
 }
 
+.contacts__button-write-us {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: calc(100% - 60px);
+  min-width: $mobile-min-width;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
 .contacts__map {
-  margin-bottom: 42px;
+  min-width: 525px;
 }
