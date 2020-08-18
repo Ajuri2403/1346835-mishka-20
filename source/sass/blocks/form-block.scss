@@ -1,5 +1,9 @@
 .form-block {
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form-block__title {
@@ -16,11 +20,23 @@
 }
 
 .form-block__slogan {
+  margin: 0;
   margin-bottom: 29px;
+  padding: 0 30px;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   color: $grey-brown;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 205px;
+  }
 }
 
 .form-block__form {
