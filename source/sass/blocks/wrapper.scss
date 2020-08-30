@@ -5,7 +5,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {

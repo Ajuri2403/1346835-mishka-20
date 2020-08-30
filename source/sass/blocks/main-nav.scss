@@ -1,5 +1,11 @@
 .main-nav {
   position: relative;
+  margin: 0 auto;
+  max-width: 1050px;
+
+  @media (min-width: $tablet-width){
+    padding: 0 30px;
+  }
 }
 
 .main-nav__toggle {
@@ -40,15 +46,100 @@
     transform: rotate(-45deg);
   }
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__list {
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+
+  &--logo {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      display: block;
+      order: -4;
+      flex-grow: 1;
+      border-right: 1px solid $property-border;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      display: block;
+      order: -3;
+    }
+
+    @media (min-width: $tablet-width) {
+      border-right: 1px solid $property-border;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-right: 35px;
+    }
+  }
+
+  &--catalog,
+  &--form {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      margin-right: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-right: 1px solid $property-border;
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      display: block;
+      order: -2;
+    }
+  }
+
+  &--new-arrivals,
+  &--sale {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      margin-right: 61px;
+    }
+  }
+
+  &--sale {
+    @media (min-width: $tablet-width) {
+      margin-right: auto;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      flex-grow: 1;
+    }
+  }
+
+  &--free-shiping {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

@@ -1,12 +1,25 @@
 .reviews {
+  position: relative;
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
+    padding-bottom: 91px;
+  }
+
+  &::before {
+    content: url("../img/review@1x.jpg");
+    position: absolute;
+    left: -30px;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
   }
 }
 
@@ -21,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 175px;
-    padding-bottom: 96px;
+    padding-bottom: 95px;
   }
 }
 
@@ -35,10 +48,15 @@
     min-height: 53px;
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__title {
   align-self: flex-end;
+  margin: 0;
 }
 
 .reviews__button-write {
@@ -61,9 +79,9 @@
 .reviews__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 30.5px;
   color: $grey-brown;
 
   @media (min-width: $tablet-width) {
@@ -107,16 +125,23 @@
 
 .reviews__author-info a {
   @include link-reset;
+  display: block;
   font-weight: normal;
+  font-size: 17px;
   line-height: 30px;
   color: $grey-brown;
 }
 
+.rewiews__autor-name {
+  display: block;
+  margin-bottom: 3px;
+}
 
 .reviews__switch-block {
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 19px;
     margin-bottom: 0;
   }
 }

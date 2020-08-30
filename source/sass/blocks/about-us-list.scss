@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
 }
 
 .about-us-list__item {
@@ -13,8 +17,7 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 61px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   &:nth-child(-n+3) {
@@ -34,7 +37,9 @@
   }
 
   &:nth-child(3) {
-    margin-bottom: 0;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:last-child {
@@ -44,4 +49,34 @@
 
 .about-us-list__item svg {
   position: absolute;
+  fill: $aquamarin;
+}
+
+.about-us-list__item--ecomaterials svg {
+  top: 6px;
+  left: 8px;
+}
+
+.about-us-list__item--style-price svg {
+  top: 7px;
+}
+
+.about-us-list__item--upper-likes svg {
+  top: 12px;
+  left: 7px;
+}
+
+.about-us-list__item--love-tenderness svg {
+  top: 9px;
+  left: 3px;
+}
+
+.about-us-list__item--manufacturer-sup svg {
+  top: 10px;
+  left: -6px;
+}
+
+.about-us-list__item--gift-box svg {
+  top: 9px;
+  left: 3px;
 }
