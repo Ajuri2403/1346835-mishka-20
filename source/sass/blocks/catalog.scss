@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 105px;
+    margin-bottom: 103px;
   }
 }
 
@@ -33,7 +33,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   &:last-child {
     grid-column: 1/4;
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {

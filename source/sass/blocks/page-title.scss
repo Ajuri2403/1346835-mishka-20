@@ -1,10 +1,12 @@
 .page-title {
-  padding: 73.5px 0;
+  position: relative;
+  padding: 73px 0;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   background-color: $footer-back;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     padding: 100.5px 0 86.5px 0;
@@ -16,5 +18,26 @@
     padding: 101px 0 113px 0;
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.page-title svg {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  right: 0;
+  display: none;
+  width: 770px;
+  height: 24px;
+  fill: $basic-white;
+  transform: translate(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
   }
 }

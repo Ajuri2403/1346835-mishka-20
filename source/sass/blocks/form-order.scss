@@ -16,18 +16,21 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 17px;
     font-size: 19px;
   }
 }
 
 .form-order__wrapper {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 175px;
+    padding-right: 225px;
   }
 
   &--confirm-block {
@@ -36,7 +39,7 @@
     align-items: center;
 
     @media (min-width: $desktop-width) {
-      padding-left: 205px;
+      padding-left: 225px;
     }
   }
 }
@@ -47,22 +50,24 @@
   border: none;
 
   &--type {
-    padding-bottom: 13px;
     margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 18px;
-      margin-bottom: 59px;
+      margin-bottom: 49px;
     }
   }
 
   &--color {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
-      padding: 67px 0 69px 0;
+      padding: 50px 0;
       margin-bottom: 50px;
       background-color: $footer-back;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 48px 0 52px 0;
     }
   }
 
@@ -81,7 +86,7 @@
   &--phone {
     @media (min-width: $tablet-width) {
       margin-bottom: 0px;
-      padding: 50px 0 24px 0;
+      padding: 46px 0 24px 0;
     }
   }
 
@@ -93,13 +98,13 @@
   }
 
   &--message {
-    margin-bottom: 17px;
+    margin-bottom: 14.5px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 53px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       margin-bottom: 49px;
     }
   }
@@ -131,11 +136,11 @@
   @media (min-width: $desktop-width) {
     flex-basis: auto;
     min-width: 175px;
-    padding-left: 57px;
+    padding-left: 60px;
   }
 
   .form-order__item--type & {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 
   .form-order__item--color & {
@@ -203,11 +208,11 @@
   .form-order__item--color & {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 262px auto;
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: 262px 264px auto;
     }
   }
 }
@@ -218,11 +223,15 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $basic-black;
 
   @media (min-width: $tablet-width) {
+  min-height: 54px;
+  padding-left: 17px;
+  padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -252,32 +261,48 @@
 }
 
 .form-order__input-block {
+  position: relative;
 
   &--radio {
-    margin-bottom: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    margin-bottom: 11px;
     padding-left: 60px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      min-height: 52px;
+      margin-bottom: 24px;
       padding-left: 81px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 80px;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &--checkbox {
-    margin-bottom: 43.5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 38px;
+    margin-bottom: 23px;
     padding-left: 61px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      min-height: 52px;
+      margin-bottom: 24px;
       padding-left: 81px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 57px;
+      margin-bottom: 24px;
+      padding-top: 3px;
     }
   }
 
@@ -287,7 +312,6 @@
     @media (min-width: $tablet-width) {
       display: flex;
       align-items: center;
-      margin-bottom: 24px;
     }
   }
 
@@ -307,7 +331,9 @@
     }
   }
 
-  &--label {
+  &--phone,
+  &--email {
+    display: block;
     flex-grow: 1;
     flex-basis: 501px;
 
@@ -322,6 +348,40 @@
 .form-order__input-block--full-name label {
   @media (min-width: $tablet-width) {
     margin-right: 25px;
+  }
+}
+
+.form-order__input-block--phone svg,
+.form-order__input-block--email svg {
+  fill: $basic-black;
+  opacity: 0.2;
+}
+
+.form-order__input-block--phone svg {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+  }
+}
+
+.form-order__input-block--email svg {
+  position: absolute;
+  top: 12px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
   }
 }
 
