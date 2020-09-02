@@ -11,7 +11,8 @@
 }
 
 .catalog-item__product-image {
-  display: block;
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
   flex-basis: 50%;
   line-height: 0;
@@ -26,6 +27,30 @@
 
   .catalog-item--basket-for-toys & {
     background-color: $footer-back;
+  }
+}
+
+.catalog-item__product-image img {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.catalog-item__product-image--video img {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 455px;
   }
 }
 
@@ -78,7 +103,7 @@
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 17.5px;
   min-height: 77px;
   border-bottom: 1px solid $property-border;
 
@@ -89,6 +114,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 97px;
+    padding-bottom: 5px;
   }
 }
 

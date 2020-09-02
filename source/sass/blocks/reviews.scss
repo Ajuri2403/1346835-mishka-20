@@ -13,9 +13,12 @@
   }
 
   &::before {
-    content: url("../img/review@1x.jpg");
-    position: absolute;
-    left: -30px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/review@1x.jpg");
+      position: absolute;
+      left: -30px;
+    }
 
     @media (min-width: $desktop-width) {
       left: 0;

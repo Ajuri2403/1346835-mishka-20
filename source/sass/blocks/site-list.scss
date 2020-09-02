@@ -79,6 +79,18 @@
   @include link-reset;
 }
 
+.site-list__item--logo img {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
 .site-list__icon {
   position: absolute;
   fill: rgba($basic-black, 0.2);
