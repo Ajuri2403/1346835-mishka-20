@@ -17,4 +17,14 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
   }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $grey-brown;
+  }
+
+  &:active {
+    color: $button-text-active;
+    background-color: $grey-brown;
+  }
 }

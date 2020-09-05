@@ -2,6 +2,18 @@
   background-color: $footer-back;
 }
 
+.page-footer svg {
+
+  &:hover {
+    fill: $aquamarin-dark-hover;
+  }
+
+  &:active {
+    fill: $aquamarin-dark-hover;
+    opacity: 0.3;
+  }
+}
+
 .page-footer__wrapper {
   margin: 0 auto;
   padding: 0 30px;

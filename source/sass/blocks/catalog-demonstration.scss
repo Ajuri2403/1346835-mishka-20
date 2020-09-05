@@ -29,6 +29,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    width: 121px;
+    height: auto;
+  }
+
+  &:active {
+    width: 80.5px;
+    height: auto;
+    opacity: 0.3;
+  }
 }
 
 //Бордер ниже разделен на две части чтобы блок с видео был не в бордере
@@ -85,6 +96,14 @@
   padding: 35px 34px 33px;
   border: 1px solid $property-border;/*2*/
   border-top: none;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px $catalog-item-hover;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 41px 42px 46px;
