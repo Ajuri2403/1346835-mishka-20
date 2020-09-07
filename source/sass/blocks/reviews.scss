@@ -15,9 +15,19 @@
   &::before {
 
     @media (min-width: $tablet-width) {
-      content: url("../img/review@1x.jpg");
+      content: "";
       position: absolute;
       left: -50px;
+      display: block;
+      min-width: 350px;
+      min-height: 457px;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-size: 350px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -119,7 +129,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 }
 
