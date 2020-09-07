@@ -5,6 +5,7 @@
 
 .site-list__item {
   box-sizing: border-box;
+  z-index: 1;
 
   &--text {
     &--norm {
@@ -53,7 +54,7 @@
       min-width: 0;
       margin-left: 0;
       padding-top: 9px;
-      z-index: 1;
+      z-index: 2;
     }
   }
 
@@ -75,8 +76,16 @@
   }
 }
 
-.site-list__item a {
+.site-list__link {
   @include link-reset;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item--logo img {
@@ -94,7 +103,15 @@
 .site-list__icon {
   position: absolute;
   fill: rgba($basic-black, 0.2);
-  z-index: -1;
+
+  .site-list__link:hover ~ & {
+    fill: $aquamarin;
+  }
+
+  .site-list__link:active ~ & {
+    fill: $aquamarin;
+    opacity: 0.2;
+  }
 
   &--search {
     top: 32px - 28.5px;

@@ -13,7 +13,7 @@
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="main-nav__item main-nav__item--logo site-list__item site-list__item--block site-list__item--logo">
-          <a href="index.html">
+          <a class="site-list__link" href="index.html">
             <picture>
               <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
               <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -23,46 +23,46 @@
         </li>
 
         <li class="main-nav__item main-nav__item--catalog site-list__item site-list__item--block">
-          <a class="" href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
 
         <li class="main-nav__item main-nav__item--form site-list__item site-list__item--block">
-          <a class="" href="form.html">Вязание на заказ</a>
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
 
         <li class="main-nav__item main-nav__item--search site-list__item site-list__item--search site-list__item--block">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search-form__search" name="main-search" id="search-header">
+            <label class="site-list__link" for="search-header">
+              <span class="search-form__item-name">Поиск по сайту</span>
+            </label>
             <svg class="site-list__icon site-list__icon--search" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6">
               <path d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0014.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 001.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1111 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/>
             </svg>
-            <input class="search-form__search" name="main-search" id="search-header">
-            <label class="" for="search-header">
-              <span class="search-form__item-name">Поиск по сайту</span>
-            </label>
           </form>
         </li>
 
         <li class="main-nav__item main-nav__item--cart site-list__item site-list__item--cart site-list__item--block">
+          <a class="site-list__link" href="#">
+            Корзина: <span>пока пуста</span>
+          </a>
           <svg class="site-list__icon site-list__icon--cart" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
             <path d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 10-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 00-1.341-.671l-3.407 6.814h-3.151a.75.75 0 000 1.5h.157l.855 2.991a.737.737 0 00-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 00.698-.739.738.738 0 00-.316-.596l.854-2.991h.157a.75.75 0 10-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
           </svg>
-          <a class="" href="#">
-            Корзина: <span>пока пуста</span>
-          </a>
         </li>
 
         <li class="flex-break"></li>
 
         <li class="main-nav__item main-nav__item--new-arrivals site-list__item site-list__item--text--small">
-          <a class="" href="#">Новые поступления</a>
+          <a class="site-list__link" href="#">Новые поступления</a>
         </li>
 
         <li class="main-nav__item main-nav__item--sale site-list__item site-list__item--text--small">
-          <a class="" href="#">Распродажа</a>
+          <a class="site-list__link" href="#">Распродажа</a>
         </li>
 
         <li class="main-nav__item main-nav__item--free-shiping site-list__item site-list__item--text--norm site-list__item--text--small">
-          <a class="" href="#">Бесплатная доставка по России</a>
+          <a class="site-list__link" href="#">Бесплатная доставка по России</a>
         </li>
       </ul>
     </nav>
@@ -79,18 +79,20 @@
       <form class="form-block__form form-order" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form-order__item form-order__item--type">
           <div class="form-order__wrapper container">
-            <legend class="form-order__title">Тип</span></legend>
+            <legend class="form-order__title">Тип</legend>
             <ul class="form-order__list">
               <li class="form-order__input-block form-order__input-block--radio">
-                <input class="form-order__input" type="radio" name="form-type" id="type-interior" checked>
                 <label for="type-interior">
+                  <input class="form-order__input" type="radio" name="form-type" id="type-interior" checked>
+                  <span class="form-order__checkbox form-order__checkbox--radio"></span>
                   <span>Аксессуар для интерьера</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--radio">
-                <input class="form-order__input" type="radio" name="form-type" id="type-toy">
                 <label for="type-toy">
+                  <input class="form-order__input" type="radio" name="form-type" id="type-toy">
+                  <span class="form-order__checkbox form-order__checkbox--radio"></span>
                   <span>Детская игрушка</span>
                 </label>
               </li>
@@ -100,46 +102,52 @@
 
         <fieldset class="form-order__item form-order__item--color">
           <div class="form-order__wrapper container">
-            <legend class="form-order__title">Цвет</span></legend>
+            <legend class="form-order__title">Цвет</legend>
             <ul class="form-order__list">
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="white" id="color-white" checked>
                 <label for="color-white">
+                  <input class="form-order__input" type="checkbox" name="white" id="color-white" checked>
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>Белый</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="grey" id="color-grey" checked>
                 <label for="color-grey">
+                  <input class="form-order__input" type="checkbox" name="grey" id="color-grey" checked>
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>Серый</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="tiffany" id="color-tiffany">
                 <label for="color-tiffany">
+                  <input class="form-order__input" type="checkbox" name="tiffany" id="color-tiffany">
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>«Тиффани»</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="black" id="color-black">
                 <label for="color-black">
+                  <input class="form-order__input" type="checkbox" name="black" id="color-black">
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>Черный</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="pink" id="color-pink">
                 <label for="color-pink">
+                  <input class="form-order__input" type="checkbox" name="pink" id="color-pink">
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>Розовый</span>
                 </label>
               </li>
 
               <li class="form-order__input-block form-order__input-block--checkbox">
-                <input class="form-order__input" type="checkbox" name="orange" id="color-orange">
                 <label for="color-orange">
+                  <input class="form-order__input" type="checkbox" name="orange" id="color-orange">
+                  <span class="form-order__checkbox form-order__checkbox--check"></span>
                   <span>Оранжевый</span>
                 </label>
               </li>
@@ -181,7 +189,7 @@
             <label class="form-order__input-block form-order__input-block--phone">
               <input class="form-order__input" type="tel" name="input-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
               <span class="visually-hidden">Введите Ваш телефон</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
+              <svg class="form-order-icon" xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
                 <path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z"/>
                 <path d="M12.529 9.327v1.552a1.42 1.42 0 011.421 1.42h1.553a2.973 2.973 0 00-2.974-2.972zM12.529 6.246a6.054 6.054 0 016.056 6.054h1.588a7.642 7.642 0 00-7.644-7.641v1.587z"/>
               </svg>
@@ -195,7 +203,7 @@
             <label class="form-order__input-block form-order__input-block--email">
               <input class="form-order__input" type="email" name="input-email" placeholder="Ваш Email*">
               <span class="visually-hidden">Введите Ваш E-mail</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+              <svg class="form-order-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
                 <path d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 003.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/>
               </svg>
             </label>

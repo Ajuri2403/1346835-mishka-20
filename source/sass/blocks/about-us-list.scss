@@ -20,6 +20,10 @@
     margin-bottom: 51px;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
   &:nth-child(-n+3) {
     grid-column: 1;
   }

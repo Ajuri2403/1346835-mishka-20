@@ -4,6 +4,7 @@
 
 .slider__previous-review,
 .slider__next-review {
+  display: block;
   flex-grow: 1;
   padding: 0;
   margin: 0;
@@ -12,6 +13,14 @@
   border: 1px solid $property-border;
   border-radius: 0;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: auto;

@@ -58,8 +58,16 @@
   box-sizing: border-box;
   flex-grow: 1;
   flex-basis: 50%;
-  padding: 26.5px 28px;
+  padding: 26.5px 28px 25.5px 28px;
   border: 1px solid $property-border;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px $catalog-item-hover;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 27px 33px 20px 32px;
@@ -96,12 +104,20 @@
 
 .catalog-item__product-name a {
   @include link-reset;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-item__product-info {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   padding: 0;
   padding-bottom: 17.5px;
   min-height: 77px;
@@ -187,4 +203,14 @@
 .catalog-item__button-add-in-cart svg {
   fill: $basic-black;
   opacity: 0.2;
+
+  &:hover {
+    fill: $aquamarin;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $aquamarin;
+    opacity: 0.3;
+  }
 }
