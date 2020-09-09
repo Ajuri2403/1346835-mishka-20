@@ -193,6 +193,10 @@
   }
 }
 
+.form-order__item legend {
+  display: block;
+}
+
 .form-order__list {
   @include list-reset;
 
