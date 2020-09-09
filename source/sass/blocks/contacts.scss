@@ -2,10 +2,10 @@
   position: relative;
   box-sizing: border-box;
   margin-bottom: 39px;
-  padding-bottom: 91px;
+  padding-bottom: 95px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 103px;
+    padding-bottom: 107px;
     margin-bottom: 57px;
   }
 
@@ -15,13 +15,15 @@
     padding-bottom: 0;
     padding: 0 50px;
     margin: 0 auto;
-    margin-bottom: 102px;
+    margin-bottom: 104px;
   }
 
   &::after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46.68' height='81.691' viewBox='-11.34 -28.346 46.68 81.691'%3E%3Cpath fill='%2363D1BB' d='M-3.561-24.455v38.9l38.9-19.451-38.9-19.449zm-7.779 77.801v-81.691h3.805v81.691h-3.805z'/%3E%3Cg%3E%3Cpath fill='%23231F20' d='M-11.34-28.346h3.805v81.691h-3.805z'/%3E%3C/g%3E%3C/svg%3E");
     position: absolute;
     display: none;
+    width: 47px;
+    height: 81px;
 
     @media (min-width: $tablet-width) {
       top: -2px;
@@ -178,42 +180,17 @@
 .contacts__map {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 454px;
   margin: 0 auto;
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
-}
-
-.contacts__map picture {
-  position: relative;
-}
-
-.contacts__map img {
-  position: relative;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 457px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 525px;
-  }
-}
-
-.contacts__map svg {
-  position: absolute;
-  top: 145px;
-  left: 138px;
-
-  @media (min-width: $tablet-width) {
-    top: 139px;
-    left: 363px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 146px;
-    left: 239px;
+    min-width: 525px;
+    margin: 0;
   }
 }

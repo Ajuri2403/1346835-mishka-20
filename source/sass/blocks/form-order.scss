@@ -432,7 +432,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        left: 15;
+        left: 15px;
       }
     }
   }
@@ -547,6 +547,7 @@
 
 .form-order__button-submit {
   width: 100%;
+  font-size: 17px;
 
   @media (min-width: $tablet-width) {
     width: 230px;

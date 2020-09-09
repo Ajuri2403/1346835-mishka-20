@@ -53,7 +53,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 96px;
-  padding-top: 21px;
+  padding-top: 22px;
   padding-left: 90px;
   margin: 0;
   font-weight: bold;
@@ -65,7 +65,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: auto;
-    margin-bottom: 24.5px;
+    margin-bottom: 25.5px;
     padding: 0;
     padding-left: 65px;
     font-size: 20px;
@@ -81,7 +81,7 @@
 
 .catalog-demonstration__title svg {
   position: absolute;
-  top: 28px;
+  top: 29px;
   left: 34px;
   fill: $aquamarin;
 
@@ -93,7 +93,7 @@
 
 .catalog-demonstration__wrapper {/*3*/
   box-sizing: border-box;
-  padding: 35px 34px 33px;
+  padding: 36px 34px 32px 33px;
   border: 1px solid $property-border;/*2*/
   border-top: none;
 
@@ -106,12 +106,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 41px 42px 46px;
+    padding: 40px 42px 45px 41px;
   }
 
   @media (min-width: $desktop-width) {
     width: 367px;
-    padding: 47px 57px 60px 80px;
+    padding: 48px 57px 60px 79px;
     border: 1px solid $property-border;/*2*/
     border-left: none;
   }

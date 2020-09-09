@@ -15,7 +15,6 @@
   justify-content: center;
   flex-grow: 1;
   flex-basis: 50%;
-  line-height: 0;
 
   .catalog-item--bunny-jumper & {
     background-color: $footer-back;
@@ -28,6 +27,10 @@
   .catalog-item--basket-for-toys & {
     background-color: $footer-back;
   }
+}
+
+.catalog-item__product-image picture {
+  line-height: 0;
 }
 
 .catalog-item__product-image img {
@@ -58,8 +61,9 @@
   box-sizing: border-box;
   flex-grow: 1;
   flex-basis: 50%;
-  padding: 26.5px 28px 25.5px 28px;
+  padding: 26.5px 28px 23.5px 27px;
   border: 1px solid $property-border;
+  border-top: none;
 
   &:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -71,14 +75,18 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 33px 20px 32px;
+    border: 1px solid $property-border;
+    border-left: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 33px 25.5px 28px;
+    padding: 27px 33px 23.5px 27px;
+    border: 1px solid $property-border;
+    border-top: none;
   }
 
   .catalog-item--bunny-jumper & {
-    padding-top: 27.5px;
+    padding-top: 28.5px;
 
     @media (min-width: $tablet-width) {
       padding-top: 26px;
@@ -86,7 +94,7 @@
   }
 
   .catalog-item--laundry-basket & {
-    padding-top: 28.5px;
+    padding-top: 30px;
 
     @media (min-width: $tablet-width) {
       padding-top: 27.5px;
@@ -98,7 +106,11 @@
   }
 
   .catalog-item--basket-for-toys & {
-    padding-top: 24.5px;
+    padding-top: 26.5px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+    }
   }
 }
 
@@ -117,7 +129,7 @@
 .catalog-item__product-info {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   padding: 0;
   padding-bottom: 17.5px;
   min-height: 77px;
@@ -125,7 +137,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 234px;
-    margin-bottom: 23.5px;
+    margin-bottom: 24.5px;
   }
 
   @media (min-width: $desktop-width) {
