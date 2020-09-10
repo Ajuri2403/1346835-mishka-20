@@ -15,18 +15,7 @@
   justify-content: center;
   flex-grow: 1;
   flex-basis: 50%;
-
-  .catalog-item--bunny-jumper & {
-    background-color: $footer-back;
-  }
-
-  .catalog-item--laundry-basket & {
-    background-color: $section-back;
-  }
-
-  .catalog-item--basket-for-toys & {
-    background-color: $footer-back;
-  }
+  background-color: $footer-back;
 }
 
 .catalog-item__product-image picture {
