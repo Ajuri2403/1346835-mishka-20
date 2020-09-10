@@ -193,6 +193,10 @@
   }
 }
 
+.form-order__item legend {
+  display: block;
+}
+
 .form-order__list {
   @include list-reset;
 
@@ -432,7 +436,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        left: 15;
+        left: 15px;
       }
     }
   }
@@ -547,6 +551,7 @@
 
 .form-order__button-submit {
   width: 100%;
+  font-size: 17px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
