@@ -11,16 +11,6 @@
   font-weight: bold;
 }
 
-.form-order__input {
-  font-size: 17px;
-  line-height: 18px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 17px;
-    font-size: 19px;
-  }
-}
-
 .form-order__wrapper {
   box-sizing: border-box;
 
@@ -86,7 +76,7 @@
 
   &--phone {
     @media (min-width: $tablet-width) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       padding: 46px 0 24px 0;
     }
   }
@@ -167,7 +157,6 @@
   .form-order__item--phone &,
   .form-order__item--email &,
   .form-order__item--message & {
-
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
@@ -229,6 +218,8 @@
   margin: 0;
   padding: 0;
   padding-top: 2px;
+  font-size: 17px;
+  line-height: 18px;
   color: $input-text;
   background-color: transparent;
   border: none;
@@ -240,6 +231,7 @@
     min-height: 54px;
     padding-left: 17px;
     padding-top: 2px;
+    font-size: 19px;
   }
 
   .form-order__input-block:hover &,
@@ -360,13 +352,13 @@
 
   .form-order__item--color &:nth-last-child(-n + 2) {
     @media (min-width: $tablet-width) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
   .form-order__item--color &:nth-last-child(-n + 3) {
     @media (min-width: $desktop-width) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -385,7 +377,6 @@
 }
 
 .form-order__checkbox {
-
   .form-order__input-block:hover &::before {
     border-color: $aquamarin-form;
   }
@@ -396,7 +387,6 @@
   }
 
   &--radio {
-
     &::before {
       content: "";
       position: absolute;
@@ -441,8 +431,7 @@
     }
   }
 
-  &--check  {
-
+  &--check {
     &::before {
       content: "";
       position: absolute;
