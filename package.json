@@ -1,7 +1,8 @@
 {
-  "name": "gulp-assembly",
+  "name": "mishka-20",
+  "private": true,
   "version": "1.0.0",
-  "description": "Сборка от fls",
+  "description": "Личный проект «Мишка» от HTML Academy",
   "main": "index.html",
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -13,6 +14,7 @@
   "author": "Ajuri",
   "license": "ISC",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -24,13 +26,16 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
-    "gulp-webp-html": "^1.0.2"
+    "gulp-webp-html": "^1.0.2",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.4"
   },
   "browserslist": [
     "last 2 versions",
