@@ -1,25 +1,41 @@
 {
   "name": "mishka-20",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "9.8.4",
-    "browser-sync": "2.26.7",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "8.0.0",
-    "gulp-sass": "4.1.0",
-    "gulp-sourcemaps": "2.6.5",
-    "gulp": "4.0.2",
-    "stylelint": "13.6.1",
-    "stylelint-config-htmlacademy": "0.1.4"
-  },
+  "version": "1.0.0",
+  "description": "Личный проект «Мишка» от HTML Academy",
+  "main": "index.html",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
+  },
+  "author": "Ajuri",
+  "license": "ISC",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.2.2",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
+    "gulp-webp-html": "^1.0.2",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.4"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,5 +52,9 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "dell": "0.0.0"
   }
 }
