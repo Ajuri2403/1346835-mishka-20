@@ -389,7 +389,6 @@
   .form-order__input:focus + &::before {
     box-shadow: 0 0 1px 1px $basic-black;
   }
-
   &--radio {
     &::before {
       content: "";
