@@ -20,6 +20,7 @@
 }
 
 .form-block__slogan {
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 29px;
   padding: 0 30px;
@@ -29,13 +30,17 @@
   color: $grey-brown;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 205px;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 }
 

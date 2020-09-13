@@ -1,6 +1,10 @@
 .catalog-demonstration {
   position: relative;
-  padding-top: 91px;
+  padding-top: 96px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -11,11 +15,26 @@
 .catalog-demonstration__video {
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     width: 683px;
+  }
+}
+
+.catalog-demonstration__video svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    width: 121px;
+    height: auto;
+  }
+
+  &:active {
+    width: 80.5px;
+    height: auto;
+    opacity: 0.3;
   }
 }
 
@@ -30,8 +49,8 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 96px;
-  padding-top: 21.5px;
-  padding-left: 91px;
+  padding-top: 22px;
+  padding-left: 90px;
   margin: 0;
   font-weight: bold;
   font-size: 17px;
@@ -40,11 +59,11 @@
   border-bottom: none;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    position: relative;
     min-height: auto;
-    margin-bottom: 24.5px;
+    margin-bottom: 25.5px;
     padding: 0;
-    padding-left: 107px;
+    padding-left: 65px;
     font-size: 20px;
     border: none;
   }
@@ -56,20 +75,39 @@
   }
 }
 
+.catalog-demonstration__title svg {
+  position: absolute;
+  top: 29px;
+  left: 34px;
+  fill: $aquamarin;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    left: 0;
+  }
+}
+
 .catalog-demonstration__wrapper {/*3*/
   box-sizing: border-box;
-  padding: 35px 34px 33px;
+  padding: 36px 34px 32px 33px;
   border: 1px solid $property-border;/*2*/
   border-top: none;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $catalog-item-hover;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 41px 42px 46px;
+    padding: 40px 42px 45px 41px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 344px;
-    margin-bottom: 27.5px;
-    padding: 47px 57px 60px 80px;
+    width: 367px;
+    padding: 48px 57px 60px 79px;
     border: 1px solid $property-border;/*2*/
     border-left: none;
   }
@@ -77,6 +115,7 @@
 
 .catalog-demonstration__description {
   margin: 0;
+  margin-right: -3px;
   margin-bottom: 41px;
   padding: 0;
   font-size: 13px;
@@ -93,6 +132,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: -21px;
-    margin-bottom: 51.5px;
+    margin-bottom: 50.5px;
+    line-height: 30.5px;
   }
 }

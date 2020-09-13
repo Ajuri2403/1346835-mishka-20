@@ -2,7 +2,7 @@
   position: relative;
   box-sizing: border-box;
   margin-bottom: 39px;
-  padding-bottom: 94px;
+  padding-bottom: 95px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 107px;
@@ -12,10 +12,28 @@
   @media (min-width: $desktop-width) {
     display: flex;
     max-width: $desktop-width;
-    padding-bottom: 0;
-    padding: 0 30px;
+    padding: 0 50px;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-bottom: 104px;
+  }
+
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46.68' height='81.691' viewBox='-11.34 -28.346 46.68 81.691'%3E%3Cpath fill='%2363D1BB' d='M-3.561-24.455v38.9l38.9-19.451-38.9-19.449zm-7.779 77.801v-81.691h3.805v81.691h-3.805z'/%3E%3Cg%3E%3Cpath fill='%23231F20' d='M-11.34-28.346h3.805v81.691h-3.805z'/%3E%3C/g%3E%3C/svg%3E");
+    position: absolute;
+    display: none;
+    width: 47px;
+    height: 81px;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      right: 54.5px;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 62px;
+      left: 113px;
+    }
   }
 }
 
@@ -24,18 +42,20 @@
 }
 
 .contacts__wrapper {
+  box-sizing: border-box;
   min-width: $mobile-min-width;
   margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding: 22px 50px 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 330px;
+    min-width: 505px;
     margin: 0;
     margin-right: 20px;
+    padding: 0;
     padding-top: 79px;
     padding-left: 175px;
   }
@@ -56,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 34.5px;
+    margin-bottom: 34px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -65,20 +85,20 @@
 .contacts__communication-block {
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 30.5px;
   color: $grey-brown;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
     font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-bottom: 84.5px;
+    margin-bottom: 84px;
   }
 }
 
@@ -111,8 +131,23 @@
   @media (min-width: $tablet-width) {
     flex-basis: 256px;
   }
+}
+
+.contacts__value a {
+  padding-bottom: 3px;
+  border-bottom: 1px solid $aquamarin-form;
+
+  &:hover {
+    color: $aquamarin-dark-hover;
+  }
+
+  &:active {
+    color: $aquamarin-dark-hover;
+    border: none;
+  }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
   }
 }
 
@@ -125,17 +160,33 @@
   bottom: 0;
   margin: 0;
   width: calc(100% - 60px);
-  min-width: $mobile-min-width;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    left: 50%;
     width: 230px;
+    transform: translate(-50%);
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    width: 230px;
   }
 }
 
 .contacts__map {
-  min-width: 525px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 454px;
+  margin: 0 auto;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 525px;
+    margin: 0;
+  }
 }

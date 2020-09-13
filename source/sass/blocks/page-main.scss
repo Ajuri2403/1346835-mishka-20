@@ -1,7 +1,12 @@
 .page-main {
   margin-bottom: auto;
+  border-top: 1px solid $property-border;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
-    margin-top: -44px;
+  @media (min-width: $tablet-width) {
+    margin-top: -46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -45px;
   }
 }

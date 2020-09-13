@@ -1,55 +1,137 @@
 .catalog-item {
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    min-height: 659px;
   }
 }
 
 .catalog-item__product-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
   flex-basis: 50%;
+  background-color: $footer-back;
+}
 
-  .catalog-item--bunny-jumper & {
-    background-color: $footer-back;
+.catalog-item__product-image picture {
+  line-height: 0;
+}
+
+.catalog-item__product-image img {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
   }
 
-  .catalog-item--laundry-basket & {
-    background-color: $section-back;
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.catalog-item__product-image--video img {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
   }
 
-  .catalog-item--basket-for-toys & {
-    background-color: $footer-back;
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 455px;
   }
 }
 
 .catalog-item__container {
+  box-sizing: border-box;
   flex-grow: 1;
   flex-basis: 50%;
-  padding: 26.5px 28px;
+  padding: 26.5px 28px 23.5px 27px;
   border: 1px solid $property-border;
+  border-top: none;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $catalog-item-hover;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 27px 33px 25.5px 34px;
+    padding: 27px 33px 20px 32px;
+    border: 1px solid $property-border;
+    border-left: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 33px 25.5px 28px;
+    padding: 27px 33px 23.5px 27px;
+    border: 1px solid $property-border;
+    border-top: none;
   }
 
   .catalog-item--bunny-jumper & {
-    padding-top: 27.5px;
+    padding-top: 28.5px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 26px;
+    }
   }
 
   .catalog-item--laundry-basket & {
-    padding-top: 28.5px;
+    padding-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 27.5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 23px;
+    }
   }
 
   .catalog-item--basket-for-toys & {
-    padding-top: 24.5px;
+    padding-top: 26.5px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+    }
+  }
+}
+
+.catalog-item__product-name a {
+  @include link-reset;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-item__product-info {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  padding-bottom: 17.5px;
+  min-height: 77px;
+  border-bottom: 1px solid $property-border;
+
+  @media (min-width: $tablet-width) {
+    min-height: 234px;
+    margin-bottom: 24.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 97px;
+    padding-bottom: 5px;
   }
 }
 
@@ -93,29 +175,6 @@
   }
 }
 
-.catalog-item__product-name a {
-  @include link-reset;
-}
-
-.catalog-item__product-info {
-  box-sizing: border-box;
-  margin: 0;
-  margin-bottom: 22.5px;
-  padding: 0;
-  padding-bottom: 17.5px;
-  min-height: 79px;
-  border-bottom: 1px solid $property-border;
-
-  @media (min-width: $tablet-width) {
-    min-height: 234px;
-    margin-bottom: 23.5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 97px;
-  }
-}
-
 .catalog-item__product-properties {
   padding: 0;
   margin: 0;
@@ -129,6 +188,8 @@
 }
 
 .catalog-item__product-order {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -137,5 +198,20 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+  }
+}
+
+.catalog-item__button-add-in-cart svg {
+  fill: $basic-black;
+  opacity: 0.2;
+
+  &:hover {
+    fill: $aquamarin;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $aquamarin;
+    opacity: 0.3;
   }
 }

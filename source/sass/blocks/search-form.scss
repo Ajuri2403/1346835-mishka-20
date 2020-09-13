@@ -1,11 +1,5 @@
 .search-form {
   position: relative;
-  min-width: 82px;
-
-  @media (min-width: $tablet-width) {
-  border-left: 1px solid $property-border;
-  border-right: 1px solid $property-border;
-  }
 }
 
 .search-form__search {
@@ -15,6 +9,6 @@
 
 .search-form__item-name {
   @media (min-width: $tablet-width) {
-  display: none;
+    display: none;
   }
 }
